@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Set;
 import java.util.function.Consumer;
 
@@ -212,7 +213,7 @@ public class MapGraph {
 		} else {
 			// Initialize lists of destinations to visit, past locations visited
 			// and best routes to those locations.
-			PriorityQueue<MapBestDijkRoute> toVisit = new PriorityQueue<MapBestDijkRoute>();
+			Queue<MapBestDijkRoute> toVisit = new PriorityQueue<MapBestDijkRoute>();
 			HashMap<GeographicPoint, MapBestDijkRoute> mapOfRoutes = new HashMap<GeographicPoint, MapBestDijkRoute>();
 			// Initialize search starting point and node.
 			GeographicPoint curr = start;

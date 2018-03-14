@@ -4,7 +4,8 @@ import java.util.LinkedList;
 
 import geography.GeographicPoint;
 
-public class MapBestDijkRoute implements Comparable<MapBestDijkRoute>{
+public class MapBestDijkRoute extends MapBestRoute implements Comparable<MapBestDijkRoute>{
+	private GeographicPoint start;
 	private GeographicPoint destination;
 	private double distance;
 	private LinkedList<GeographicPoint> route;
@@ -35,15 +36,9 @@ public class MapBestDijkRoute implements Comparable<MapBestDijkRoute>{
 		this.distance = newDistance;
 	}
 	
-	public LinkedList<GeographicPoint> getRoute() {
-		return route;
-	}
-	
+	@Override
 	public void setRoute(LinkedList<GeographicPoint> newRoute) {
 		this.route = newRoute;
-	}
-	
-	public GeographicPoint getDestination() {
-		return destination;
+		newRoute.
 	}
 }
